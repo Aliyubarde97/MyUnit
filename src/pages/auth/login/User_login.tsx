@@ -1,3 +1,4 @@
+import { EyeClosed } from 'phosphor-react'
 import  Login_img from '../../../assets/img/unboarding_imgs/login_img.jpg'
 const User_login = () => {
   return (
@@ -6,38 +7,46 @@ const User_login = () => {
    <div className="container md:flex md:flex-row">
     <div className="block md:w-1/2">
       <p className="text-text-primary text-3xl font-extrabold p-3"><span className="text-text-secondary font-bold text-5xl">MY</span>Unit</p>
-      <p className="text-lg capitalize font-semibold p-3 ">Create an account for your Electricity payment bills</p>
+      <p className="text-lg capitalize font-semibold p-3 ">Welcome back.</p>
       <form action="" className="p-3"> 
        <div className="block py-2">
         <label htmlFor="text-sm"><span className="text-red-500">*</span>Email</label>
-        <input type="Email" className="block bg-gray-100 outline-none w-full h-[50px] rounded-lg px-3" placeholder="Enter a valid Email address" />
+        <input type="Email" className="block bg-gray-100 outline-none w-full h-[50px] rounded-lg px-3" placeholder="Enter a valid Email or phone number" />
        </div>
 
        <div className="block py-2">
         <label htmlFor="text-sm"><span className="text-red-500">*</span>Password</label>
         <input type="password" className="block bg-gray-100 outline-none w-full h-[50px] rounded-lg px-3" placeholder="atlist 6 digit" />
+        <EyeClosed size={40} className='flex absolute top-10 right-0  justify-end px-1 cursor-pointer' />
        </div>
 
        
+      <div className="flex justify-between gap-2 py-2">
+        <div>
+         <input type="checkbox" name="" id="" className="border bg-text-secondary border-text-secondary" />
+       <label htmlFor="" className="px-2 text-xs">Remember Me</label>
+        </div>
+
+        <div>
+        <p className="text-sm"><a href="">Forget Password</a></p>
+        </div>
+       </div>
+      
        
        <div className="block py-2">
         <button className="block text-white bg-text-secondary outline-none w-full h-[50px] rounded-full " >Create Account</button>
        </div>
         
 
-       <div className="block py-2">
-       <label htmlFor="text-sm px-2"><span className="text-red-500 px-1">*</span></label>
-       <input type="checkbox" name="" id="" className="border border-text-secondary" />
-       <label htmlFor="" className="px-2 text-xs">I Confirm That I Have Read MyUnit's <span className="text-text-secondary"><a href="">Privacy Policy</a></span> And <span className="text-text-secondary"><a href="">Terms and use</a></span> I Agree To The Use Of My Data In Line Therewith.</label>
-       </div>
+       
 
        <div className="flex justify-between gap-2 py-2">
         <div>
-          <p className="text-sm"><a href="">Already have an account?</a></p>
+          <p className="text-sm"><a href="">Don't have an account?</a></p>
         </div>
 
         <div>
-        <p className="text-sm"><a href="">sign in</a></p>
+        <p className="text-sm"><a href="">sign up</a></p>
         </div>
        </div>
       </form>
