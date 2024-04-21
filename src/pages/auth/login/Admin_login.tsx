@@ -1,8 +1,10 @@
 const Admin_login = () => {
   return (
+    <>
     <div>
       
     </div>
+    </>
   )
 }
 
